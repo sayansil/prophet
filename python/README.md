@@ -20,13 +20,9 @@ Full documentation and examples available at the homepage: https://facebook.gith
 
 ## Installation
 
-To install along with pre-compiling of stand model, use
+To create the model right in the source package.
 ```shell
-python setup.py install --build-model
-```
-Alternatively, you can try following to create the model right in the source package.
-```shell
-python setup.py develop --build-model
+python setup.py build_py --build-model
 ```
 
 To install the default compiled stan model, run
