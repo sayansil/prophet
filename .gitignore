@@ -19,4 +19,4 @@ build/
 *.idea
 *.vscode
 
-!python/build/fbprophet/stan_model/*.pkl
+!python/fbprophet/stan_model/*.pkl
