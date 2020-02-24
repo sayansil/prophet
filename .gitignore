@@ -17,3 +17,6 @@ build/
 *.*~
 
 *.idea
+*.vscode
+
+!python/build/stan_model/*.pkl

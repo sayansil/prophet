@@ -20,8 +20,19 @@ Full documentation and examples available at the homepage: https://facebook.gith
 
 ## Installation
 
+To install along with pre-compiling of stand model, use
 ```shell
-pip install fbprophet
+python setup.py install --build-model
+```
+Alternatively, you can try following to create the model right in the source package.
+```shell
+python setup.py develop --build-model
+```
+
+To install the default compiled stan model, run
+
+```shell
+python setup.py install
 ```
 Note:  Installation requires PyStan, which has its [own installation instructions](http://pystan.readthedocs.io/en/latest/installation_beginner.html).
 On Windows, PyStan requires a compiler so you'll need to [follow the instructions](http://pystan.readthedocs.io/en/latest/windows.html).
@@ -29,7 +40,7 @@ On Windows, PyStan requires a compiler so you'll need to [follow the instruction
 
 ## Installation using Docker and docker-compose (via Makefile)
 
-Simply type `make build` and if everything is fine you should be able to `make shell` or alternative jump directly to `make py-shell`. 
+Simply type `make build` and if everything is fine you should be able to `make shell` or alternative jump directly to `make py-shell`.
 
 To run the tests, inside the container `cd python/fbprophet` and then `python -m unittest`
 
